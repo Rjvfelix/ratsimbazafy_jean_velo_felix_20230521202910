@@ -38,6 +38,5 @@ public class AuthController {
         String jwtAccessToken = jwtEncoder.encode(JwtEncoderParameters.from(jwtClaimsSet)).getTokenValue();
         idToken.put("accessToken", jwtAccessToken);
         return idToken;
-
     }
 }
